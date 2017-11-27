@@ -1,0 +1,91 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Positioning */
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(assets/bg1.jpg) no-repeat center fixed;
+  background-size: cover;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.profile-card {
+  width: 48%;
+ /* max-width: calc(100vw - 10px); */
+}
+h1 {font-size: 1.5rem;
+}	
+h2 {font-size: 1rem;
+}
+p,a {font-size: 1rem;
+}
+.head, .links {
+  text-align: center;
+}
+
+.head, .content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.content {
+  border-top: 1px solid hsla(0, 0%, 30%, .8);
+}
+
+.head, .about {
+  margin-bottom: 5%;
+	margin-top: 5%;
+	}
+
+.about {
+	text-align: justify;
+}
+.content {
+  padding: 2% 5%;
+}
+
+/* Profile image */
+
+.profile-image {
+  margin-top: -60px;
+}
+
+img {
+  width: 120px;
+  height: 160px;
+  border-radius: 5%;
+  padding: 1px;
+  background-color: #ff8c00;
+  filter: grayscale(50%);
+  transition: all 0.5s ease-in-out;
+}
+
+img:hover {
+  filter: grayscale(20%);
+  transform: scale(1.1);
+}
+
+.profile-card {
+  background-color: hsla(0, 0%, 100%, .5);
+  border-radius: 4px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+}
+
+/* Contact links */
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
